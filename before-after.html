@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovat Architecture</title>
+    <link rel="icon" href="assets/img/fav.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/animated.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/swiper-slide.css" />
+    <link rel="stylesheet" href="assets/css/animation-2.css" />
+    <style>
+        .before-after-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            --position: 50%;
+        }
+
+        .before-after-inner-wrap {
+            width: 100%;
+            max-height: 600px;
+        }
+
+        .before-after-slider-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+
+        .before-img {
+            position: absolute;
+            inset: 0;
+            width: var(--position);
+        }
+
+        .before-after-range {
+            position: absolute;
+            inset: 0;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        .before-after-range:focus-visible~.slider-ba-btn {
+            outline: 5px solid #000;
+            outline-offset: 3px;
+        }
+
+        .slider-ba-line {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 3px;
+            left: var(--position);
+            background-color: #b19777;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        .slider-ba-btn {
+            position: absolute;
+            background-color: #b19777;
+            color: #fff;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            top: 50%;
+            left: var(--position);
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 0 6px rgba(214, 214, 214, 0.2),
+                0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        .ba-text {
+            color: #fff;
+        }
+
+        .before-text {
+            position: absolute;
+            top: 2%;
+            left: 1%;
+        }
+
+        .after-text {
+            position: absolute;
+            top: 2%;
+            right: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <!----------------- Sticky Scroll Start----------------->
+    <div id="scrolltop"></div>
+    <!----------------- Sticky Scroll End----------------->
+
+    <!------------------------Header start--------------------------->
+    <div id="header"></div>
+    <!------------------------Header End--------------------------->
+    <!-------------Main Start------------>
+    <main>
+        <!------------Section 1 Start-------------->
+        <section id="priceSection-1">
+            <div class="about-sec-1-wrapper">
+                <div class="container">
+                    <div class="about-sec-1-content-wrap">
+                        <div>
+                            <a href="/index.html" class="abt-sec-1-a-1">Home</a>/
+                            <a href="" class="abt-sec-1-a">Before After</a>
+                        </div>
+                        <div>
+                            <h1 class="abt-sec-1-h1">Before After</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------Section 1 End-------------->
+        <!------------Section 2 Start-------------->
+        <section>
+            <div class="before-after-wrapper-sec-1">
+                <div class="container-fluid">
+                    <div class="before-after-img-wrapper">
+                        <div class="before-after-inner-wrap">
+                            <img class="before-img before-after-slider-img" src="assets/img/before-after/04-b.jpg"
+                                width="100%" alt="" />
+                            <img class="after-img before-after-slider-img" src="assets/img/before-after/04-a.jpg"
+                                width="100%" alt="" />
+                        </div>
+                        <input type="range" min="5" max="95" value="50" class="before-after-range" />
+                        <div class="slider-ba-line"></div>
+                        <div class="slider-ba-btn" aria-hidden="true">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                        <h5 class="before-text ba-text">Before</h5>
+                        <h5 class="after-text ba-text">After</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------Section 2 End-------------->
+        <!------------Section 3 Star-------------->
+        <section>
+            <div class="before-after-wrapper-sec-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="before-after-img-wrapper before-after-img-wrapper-2">
+                                <div class="before-after-inner-wrap">
+                                    <img class="before-img before-after-slider-img"
+                                        src="assets/img/before-after/int-before.png" width="100%" alt="" />
+                                    <img class="after-img before-after-slider-img"
+                                        src="assets/img/before-after/int-after.png" width="100%" alt="" />
+                                </div>
+                                <input type="range" min="5" max="95" value="50"
+                                    class="before-after-range before-after-range-2" />
+                                <div class="slider-ba-line"></div>
+                                <div class="slider-ba-btn" aria-hidden="true">
+                                    <i class="fa-solid fa-arrows-left-right"></i>
+                                </div>
+                                <h5 class="before-text ba-text">Before</h5>
+                                <h5 class="after-text ba-text">After</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="before-after-img-wrapper before-after-img-wrapper-3">
+                                <div class="before-after-inner-wrap">
+                                    <img class="before-img before-after-slider-img"
+                                        src="assets/img/before-after/bath-before.jpg" width="100%" alt="" />
+                                    <img class="after-img before-after-slider-img"
+                                        src="assets/img/before-after/bath-after.jpg" width="100%" alt="" />
+                                </div>
+                                <input type="range" min="5" max="95" value="50"
+                                    class="before-after-range before-after-range-3" />
+                                <div class="slider-ba-line"></div>
+                                <div class="slider-ba-btn" aria-hidden="true">
+                                    <i class="fa-solid fa-arrows-left-right"></i>
+                                </div>
+                                <h5 class="before-text ba-text">Before</h5>
+                                <h5 class="after-text ba-text">After</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------Section 3 End-------------->
+        <!--------------------Section 4 Start------------>
+        <section>
+            <div class="price-section-4 price-section-4-bg">
+                <div class="container">
+                    <div>
+                        <div class="sec-8-heading">
+                            <img src="assets/img/sec-8-heading.png" alt="" />
+                            <span>Work With Us</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="price-sec-4-h1">
+                                Have a Project in mind?<br />
+                                Do not hesitate to say hello.
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="/contact-us.html" class="price-sec-4-btn">Lets Build <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------Section 4 End------------>
+    </main>
+    <!-------------Main Start------------>
+    <!------------------------Footer Starts---------------------->
+    <div id="footer"></div>
+    <!------------------------Footer End---------------------->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const beforeafterimgwrapper = document.querySelector(
+            ".before-after-img-wrapper"
+        );
+        document
+            .querySelector(".before-after-range")
+            .addEventListener("input", (e) => {
+                beforeafterimgwrapper.style.setProperty(
+                    "--position",
+                    `${e.target.value}%`
+                );
+            });
+
+        // home-interior
+        const interiorimg = document.querySelector(".before-after-img-wrapper-2");
+        document
+            .querySelector(".before-after-range-2")
+            .addEventListener("input", (e) => {
+                interiorimg.style.setProperty("--position", `${e.target.value}%`);
+            });
+
+        // Bath-interior
+        const bathtub = document.querySelector(".before-after-img-wrapper-3");
+        document
+            .querySelector(".before-after-range-3")
+            .addEventListener("input", (e) => {
+                bathtub.style.setProperty("--position", `${e.target.value}%`);
+            });
+    </script>
+</body>
+
+</html>

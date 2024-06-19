@@ -1,0 +1,14 @@
+/*css class*/
+.effect5 {
+    position: relative;
+    overflow: hidden;
+}
+
+.effect5 img {
+    transition: transform .8s;
+    overflow: hidden;
+}
+
+.effect5:hover img {
+    transform: scale(1.2);
+}
