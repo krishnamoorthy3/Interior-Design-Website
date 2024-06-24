@@ -22,7 +22,7 @@
         padding: 0;
     }
     .index-slide-thumb-width{
-        width: 230px !important;
+        width: 200px !important;
     }
     .footer-input {
     padding-right: 4px;
@@ -53,6 +53,9 @@
     }
     .footer-btn{
         right: -38px;
+    }
+    .index-thumb-end{
+        justify-content: end;
     }
 }
 
