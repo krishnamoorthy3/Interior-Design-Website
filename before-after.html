@@ -17,91 +17,6 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/swiper-slide.css" />
     <link rel="stylesheet" href="assets/css/animation-2.css" />
-    <style>
-        .before-after-img-wrapper {
-            position: relative;
-            overflow: hidden;
-            --position: 50%;
-        }
-
-        .before-after-inner-wrap {
-            width: 100%;
-            max-height: 600px;
-        }
-
-        .before-after-slider-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: left;
-        }
-
-        .before-img {
-            position: absolute;
-            inset: 0;
-            width: var(--position);
-        }
-
-        .before-after-range {
-            position: absolute;
-            inset: 0;
-            cursor: pointer;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-        }
-
-        .before-after-range:focus-visible~.slider-ba-btn {
-            outline: 5px solid #000;
-            outline-offset: 3px;
-        }
-
-        .slider-ba-line {
-            position: absolute;
-            inset: 0;
-            height: 100%;
-            width: 3px;
-            left: var(--position);
-            background-color: #b19777;
-            transform: translateX(-50%);
-            pointer-events: none;
-        }
-
-        .slider-ba-btn {
-            position: absolute;
-            background-color: #b19777;
-            color: #fff;
-            height: 50px;
-            width: 50px;
-            border-radius: 100%;
-            top: 50%;
-            left: var(--position);
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-            z-index: 111;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 0 6px rgba(214, 214, 214, 0.2),
-                0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-        }
-
-        .ba-text {
-            color: #fff;
-        }
-
-        .before-text {
-            position: absolute;
-            top: 2%;
-            left: 1%;
-        }
-
-        .after-text {
-            position: absolute;
-            top: 2%;
-            right: 1%;
-        }
-    </style>
 </head>
 
 <body>
@@ -158,8 +73,8 @@
         <section>
             <div class="before-after-wrapper-sec-2">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
+                    <div class="row row-gap-5">
+                        <div class="col-lg-6">
                             <div class="before-after-img-wrapper before-after-img-wrapper-2">
                                 <div class="before-after-inner-wrap">
                                     <img class="before-img before-after-slider-img"
@@ -177,7 +92,7 @@
                                 <h5 class="after-text ba-text">After</h5>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="before-after-img-wrapper before-after-img-wrapper-3">
                                 <div class="before-after-inner-wrap">
                                     <img class="before-img before-after-slider-img"
